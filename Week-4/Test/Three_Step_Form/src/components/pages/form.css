@@ -1,0 +1,40 @@
+.form-background{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 8vw;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+.form-box{
+    width: 60%;
+    /* min-width: 600px; */
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 8vh;
+    box-sizing: border-box;
+    /* overflow: scroll; */
+    height: 700px;
+}
+.side-form-image{
+width: 550px;
+height: 550px;
+object-fit: contain;
+/* position: fixed; */
+}
+button{
+    cursor: pointer;
+}
+@media only screen and (max-width: 1420px) {
+.form-box{
+    width: 90vw;
+    margin: auto;
+    min-width: none;
+}
+.side-form-image{
+    display: none;
+}
+}

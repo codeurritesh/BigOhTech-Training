@@ -1,0 +1,40 @@
+Scopes of let
+-------------
+- If we defined any variable using let keyword it means that variable is now having the block Scope
+- Variable can not be decleared with same name using the let keyword
+- Let keyword is decleared in ES6
+    Example:
+        let variable=10;
+        let variable=20; //Shows Error
+        function fun(){
+            let variable=20;
+        }
+        console.log(variable);// Prints 10 because of block Scope
+
+Scopes of var
+-------------
+- If we defined any variable using var keyword it means that variable is now having the functional Scope
+- Variable can be decleared with same name using the var keyword
+- var keyword is decleared before ES6
+    Example:
+        var variable=10;
+        var variable=20; // run perfectly
+        function fun(){
+            var variable=30;
+        }
+        console.log(variable);// Prints 20 because of function scope 
+
+Scopes of const
+-------------
+- If we defined any variable using const keyword it means that variable is now having the block Scope
+- Variable can not be decleared with same name using the const keyword
+- In const Variable can not be modified again
+- const keyword is decleared in ES6
+    Example:
+        const variable=10;
+        const variable=20; //Shows Error
+        variable=50; // Shows Error
+        function fun(){
+            const variable=20;
+        }
+        console.log(variable);// Prints 10 because of block Scope

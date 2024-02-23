@@ -1,0 +1,62 @@
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #233142;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+#searchbar{
+width: 30vw;
+height: 40px;
+font-size: large;
+padding: 5px;
+box-sizing: border-box;
+border: 0px;
+}
+#search-button{
+    height: 40px;
+    background-color: white;
+    /* border-radius: 5px ; */
+    color: black;
+    cursor: pointer;
+    border: 0px;
+    font-size: large;
+    width: 40px;
+}
+.header-component{
+    display: flex;
+    align-items: center;
+}
+#like-button{
+    height: 40px;
+    border-radius: 5px ;
+    color: #e3e3e3;
+    cursor: pointer;
+    font-size: 30px;   
+    border: 0px;
+    background-color: #233142;
+
+}
+#countLikes{
+    color: rgb(114, 114, 114);
+}
+#like-button:hover{
+    color: #f95959;
+
+}
+#search-button:hover{
+background-color: #455d7a;
+color: white;
+}
+#bag-icon{
+    margin-right: 10px;
+    font-size: xx-large;
+}

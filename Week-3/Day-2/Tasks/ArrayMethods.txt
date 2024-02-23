@@ -1,0 +1,101 @@
+    Array
+---------------
+- An Array is the collection of the elements of we can say collection of the objects.
+- JavaScript is the dynammically typped language
+- In array also , it is possible to store the all type of value together.
+
+Example:    const array=[20,true,"Ritesh",null,Undefined];
+            console.log(array);// Runs without error
+
+ Array Methods
+---------------
+    Example:    
+            const array=[20,true,"Ritesh",null,Undefined];
+
+    pop(): array.pop()                              // Remove last elements
+
+    push(): array.push(value)                       // Add at last
+
+    shift(): array.shift()                          // Remove first Element
+
+    unShift(): array.unShift(value)                 // Add at first
+    
+    reverse(): array.reverse()                      // Reverse An array
+    
+    length: array.length                            // Length of Array
+    
+    at(): array.at(2)                               // Access element at index 2
+    
+    join(): array.join("*")                         // Join all elements by *
+    
+    concat(): array1.concat(array2)                 // Merge two Arrays into the single
+    
+    flat(): array.flat()                            // convery 2D array into 1D Array
+    
+    splice(): array.splice(2,0,"Hello","bye")       // Used to add new element at index
+    
+    slice(): array.slice(2)                         // Used to delete element from index 2
+    
+    toString(): array.toString()                    // Used to Convert Array to toString
+    
+    map(): array.map((item)=>{})                    // Used to Access each element 
+    
+    filter(): array.filter((age)=>{age>=18})        // Used to filter out the Array basis on the some conditions
+    
+    include(): array.include("Age")                 // Return True and False 
+    
+    forEach(): array.forEach((item)=>{})            // Used to Access each element
+    
+    reduce(): array.reduce((total,item)=>{
+        
+    },0)      // Used to Perform operation on the basic of each element
+find(),
+findIndex();
+indexOf();
+hasOwnProperty();
+Object.keys();
+Object.values();
+
+    let data = [
+        {
+            id:1,
+            totalAmt:10
+        },{
+            id:2,
+            totalAmt:20
+        },{
+            id:3,
+            totalAmt: 100
+        },{
+            id:4,
+            totalAmt:40
+        }
+    ]
+
+    data = data.map((item)=>({
+        ...item,
+        totalAmt: item.id == 3 ? data.reduce((sum,curr)=>sum+curr.totalAmt,0) : item.totalAmt
+    }))
+    
+    data.reduce((total,item)=>{
+        total+=item.totalAmt;
+    },0)
+    data.push({Total:total});
+
+
+    record = [
+        {
+            id:1,
+            totalAmt:10
+        },{
+            id:2,
+            totalAmt:20
+        },{
+            id:3,
+            totalAmt:30
+        },{
+            id:4,
+            totalAmt:40
+        },
+    ]
+

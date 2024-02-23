@@ -1,0 +1,71 @@
+############################ DAY-1 Training ##########################
+
+- Complete 13 Questions Given
+- Questions URL: https://redmine.bigohtech.com/projects/js-training/issues
+
+############################ DAY-2 Training ##########################
+
+- Basic JavaScript ES6
+- DataTypes
+- Var,Let,Const Scopes
+- Hoisting
+- Undefined VS NULL
+- Regular Function vs Arrow Function
+- Temporal DeadZone
+- Primitive And Non Primitive
+- Array Methods
+    . MAP
+    . FILTER
+    . INCLUDE
+    . REDUCE
+    . FOREACH
+- W3School
+- Opeartors
+
+############################ DAY-3 Training ##########################
+
+- Execution Context
+- Event Loop
+- Event Queue
+- Array
+- Closure
+- Opeartors
+- Object
+
+############################ DAY-4 Training ##########################
+
+- Promise
+- CallBAck
+- ProtoType
+- DeepCopy And ShelloCopy
+- False and Falsy
+- Callback Hell
+- Async await
+- IIFE
+- Spread and rest Opeartors
+- Try Catch Finally
+- Class Oops Concept
+- Set & Map
+
+############################ DAY-5 Training ##########################
+
+- Call
+- Apply 
+- Bind
+
+- JS Docs
+- Web API
+- Settimeout disadvantages
+- SetTimeOut and interval
+- Date
+- Using Naming Convention
+- APIs
+- Events 
+    click
+    keydown
+    keyup
+    change
+    hover
+    etc
+- HTML, HTML Events
+- CSS

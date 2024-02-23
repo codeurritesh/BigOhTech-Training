@@ -1,0 +1,10 @@
+############################ DAY-3 Training ##########################
+- Execution Context
+- Event Loop
+- Event Queue
+- Array
+- Closure
+- Opeartors
+- Object
+- New
+- scopes

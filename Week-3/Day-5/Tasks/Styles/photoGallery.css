@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchbar{
+width: 30vw;
+height: 40px;
+font-size: large;
+padding: 5px;
+box-sizing: border-box;
+}
+#search-button{
+    height: 40px;
+    background-color: grey;
+    border-radius: 5px ;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+}
+.header-component{
+    display: flex;
+    align-items: center;
+}
+#like-button{
+    height: 40px;
+    border-radius: 5px ;
+    color: grey;
+    cursor: pointer;
+    font-size: 30px;   
+    border: 0px;
+
+}
+#countLikes{
+    color: rgb(114, 114, 114);
+}
+#like-button:hover{
+    color: black;
+
+}
+#search-button:hover{
+background-color: black;
+color: white;
+}
+#filter-card{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+#filter-card select{
+    width: 180px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 5px;
+}
+#image-container{
+    margin: auto;
+    width: 80vw;
+    height: calc(100vh - 380px);
+    overflow-y: scroll;
+    background-color: grey;
+    padding: 20px;
+    overflow: scroll;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.card{
+    width: 300px;
+    height: fit-content;
+    background-color: #eee;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.card-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+}
+.card-name{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-like{
+    border: 0px;
+    color: Red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:x-large;
+    cursor: pointer;
+}
+.paging-section{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#offset{
+    width: 40px;
+}
+.footer{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}

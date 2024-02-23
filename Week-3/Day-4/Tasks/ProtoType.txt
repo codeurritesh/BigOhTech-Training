@@ -1,0 +1,38 @@
+    ProtoType
+-----------------
+- Prototype is the Mechanism using which we can implement inheritance in JavaScript.
+- __proto__ is called as Dender Proto which is point towords parent class
+- All JavaScript objects inherit properties and methods from a prototype:
+            * Date objects inherit from Date.prototype
+            * Array objects inherit from Array.prototype
+            * Person objects inherit from Person.prototype
+
+- The Object.prototype is on the top of the prototype inheritance chain:
+
+- Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+Example: 
+
+ProtoType
+                const person={
+                    name:"Ritesh",
+                    age: "25",
+                    isAdult:true
+                }
+
+                let p1=Object.create(person);
+                let p2=Object.create(p1);
+                console.log(p2.name);                           // Prints Ritesh
+                console.log(p2.age);                            // Prints 25
+                console.log(p1.hasOwnProperty("name"))          // return False
+                console.log(p2.hasOwnProperty("age"))           // return False
+                console.log(p1);                                // Empty Object
+                console.log(p2);                                // Empty Object
+                console.log(p2.__proto__==p1);                  // Contains referance to the Parent Object
+                console.log(p1.__proto__);                      // returns { name: 'Ritesh', age: '25', isAdult: true } means person
+                console.log(person.__proto__);                  // returns Object
+                console.log(Object.prototype.__proto__);        // returns null
+                console.log(Boolean.prototype.__proto__);       // returns Object
+                console.log(String.prototype.__proto__);        // returns Object
+                console.log(Array.prototype.__proto__);         // returns Object
+                console.log(Function.prototype.__proto__);      // returns Object

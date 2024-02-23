@@ -1,0 +1,13 @@
+############################ DAY-4 Training ##########################
+
+- Promise
+- CallBAck
+- ProtoType
+- DeepCopy And ShelloCopy
+- Callback Hell
+- Async await
+- Set & Map
+- Spread and rest Opeartors
+- IIFE(kal)
+- Try Catch Finally(hw)
+- Class Oops Concept(kal)

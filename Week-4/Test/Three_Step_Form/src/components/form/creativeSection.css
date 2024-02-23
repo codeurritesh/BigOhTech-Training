@@ -1,0 +1,21 @@
+.form-image-handler{
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.img-holder{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid grey;
+    cursor: pointer;
+    margin: 10px;
+}
+.fig-holder{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bolder;
+}

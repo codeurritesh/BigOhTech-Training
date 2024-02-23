@@ -1,0 +1,30 @@
+    Undefined VS NULL
+-------------------------
+- Both Undefined and NULL is distinct thing but they shows a kind of same thing that the absence of the value in the variable
+
+# Undefined: 
+    - Undefined is gernally we can say that is the variable is defined but if it is not initialised int he Scope then it is called as Undefined.
+    - Suppose we have an variable which is defined but not initialised then value of that variable is undefined
+        Example: 
+            let variable;
+            console.log(variable);// it shows Undefined
+
+            const variable;
+            console.log(variable);// it shows Undefined
+
+            function fun(value){
+                console.log(value);// Print Undefined
+            }
+            fun();// We have not passed value
+
+# NULL:
+    - Null is gernally we can say that if the variable is intentionaly repersent the absence of any object
+    - We can say that null is the absence of the value but it is given intentionaly.
+        Example:
+            let variable=null;// Here we are intentionaly providing the null value
+            console.log(variable);// Here it will print NULL
+
+             function fun(value){
+                console.log(value);// Print NULL
+            }
+            fun(null);// We have passed NULL as value

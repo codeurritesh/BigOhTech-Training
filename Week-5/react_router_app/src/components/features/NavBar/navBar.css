@@ -1,0 +1,22 @@
+.nav-bar{
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #272343;
+    
+}
+.nav-right{
+    display: flex;
+    color: white;
+}
+.nav-text{
+    margin-left: 30px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}

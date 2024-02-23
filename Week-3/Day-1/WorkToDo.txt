@@ -1,0 +1,3 @@
+- We have to Complete the 13 questions given in Issues Using JavaScript.
+- Questions URL: https://redmine.bigohtech.com/projects/js-training/issues
+- I have Completed All the Questions

@@ -1,0 +1,18 @@
+# We have to Learn and read these topics:
+
+- Basic JavaScript ES6
+- DataTypes
+- Var,Let,Const Scopes
+- Hoisting
+- Undefined VS NULL
+- Regular Function vs Arrow Function
+- Temporal DeadZone
+- Primitive And Non Primitive
+- Array Methods
+    . MAP
+    . FILTER
+    . INCLUDE
+    . REDUCE
+    . FOREACH
+- W3School
+- Opeartors

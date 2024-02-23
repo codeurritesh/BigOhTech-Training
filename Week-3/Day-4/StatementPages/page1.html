@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main{
+            width: 100vw;
+            /* height: 100vh; */
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .page{
+            width: 100vw;
+            height: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* padding: 5%; */
+            /* padding: 10%; */
+
+            
+        }
+        .innerComponents{
+            width: 100%;
+            border: 2px solid #e6e5e5;
+            border-radius: 10px;
+            overflow: hidden;
+            
+        }
+        table, th, td {
+            border-collapse: collapse;
+             border-top: 1px solid #e6e5e5;
+             margin: 1px;
+
+        }
+        th,td{
+            padding: 20px;
+        }
+        td{
+            text-align: center;
+        }
+        /* .table{
+            width: 100%;
+
+        } */
+        table{
+            width: 100%;
+            overflow: scroll;
+        }
+        @media screen and (max-width: 1100px) {
+            .page{
+                width: 100vw;
+                background-color: white;
+            }
+            
+        }
+        @media screen and (max-width: 460px) {
+            
+            .innerComponents{
+                overflow: scroll;
+            }
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+        <div class="page">
+            <div style="width: 90%;">
+            <div >
+                <h1 style="text-align: center; color: black; font-family: Arial, Helvetica, sans-serif;margin-bottom: 20px;">Statement</h1>
+            </div>
+            <div class="innerComponents"style="width: 100%;">
+           
+            <section class="table" style="width: 100%;">
+                <!-- Name & Addresses -->
+                <div style="padding: 20px; width: 100%;color:black;background-color: #eee;box-sizing: border-box;">
+                    <B><p>Lisa Brown</p></B>
+                    <p>Crafted Timberworks</p>
+                    <br>
+                    <p style="width: 30%;">230 Sumit Dr. Kamloops, BC
+                        Canada</p>
+                </div>
+                <!-- Statement Period -->
+                <div style="padding: 20px; width: 100%;color: grey;">
+                    <p><b>Statement Period &nbsp;&nbsp;&nbsp; Nov 01 - 30, 2023</b></p>
+                </div>
+                <table >
+                <!-- Table Heading -->
+                    <tr style="background-color: #eee;padding: 20px;">
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>BITS™ Earned</th>
+                        <th>BITS™ Spent</th>
+                    </tr>
+                    <tr>
+                        <td>Nov 01</td>
+                        <td>Opening Balance</td>
+                        <td style="border-right: 3px dashed #eee;">113.00</td>
+                        <td>2500.00</td>
+                    </tr>
+
+                    <!-- Looping Data -->
+                    <tr>
+                        <td>Nov 01</td>
+                        <td><p>WoodWorks</p><small style="color: grey">SA07200093</small></td>
+                        <td style="border-right: 3px dashed #eee;">113.00</td>
+                        <td>2500.00</td>
+                    </tr>
+                    <!-- Add more columns dynamically here if needed -->
+                    <!-- Looping Data Ends -->
+ 
+
+                    <!-- Total Summary -->
+                    <tr style="border-top: 1px solid black;padding: 30px;">
+                        <td></td>
+                        <td>Closing Total</td>
+                        <td style="border-right: 3px dashed #eee;"><b>1486.00</b></td>
+                        <td><b>251.00</b></td>
+                    </tr>
+                </table>
+            </section>
+            
+        </div>
+    </div>
+        </div>
+
+    
+</body>
+</html>

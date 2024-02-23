@@ -1,0 +1,42 @@
+    Map
+----------
+- A Map holds key-value pairs where the keys can be any datatype.
+- A Map remembers the original insertion order of the keys.
+
+Example: 
+                const map=new Map();
+                map.set("name","Ritesh");
+                map.set("age","23");
+                map.set("city","Mathura");
+
+Methods: 
+
+            new Map()	Creates a new Map object
+            set()	Sets the value for a key in a Map
+            get()	Gets the value for a key in a Map
+            size	Returns the number of Map elements
+            clear()	Removes all the elements from a Map
+            delete()	Removes a Map element specified by a key
+            has()	Returns true if a key exists in a Map
+            forEach()	Invokes a callback for each key/value pair in a Map
+            entries()	Returns an iterator object with the [key, value] pairs in a Map
+            keys()	Returns an iterator object with the keys in a Map
+            values()	Returns an iterator object of the values in a Map
+
+    Set
+-----------
+- A JavaScript Set is a collection of unique values.
+- Each value can only occur once in a Set.
+- A Set can hold any value of any data type.
+
+Methods: 
+
+        new Set()	Creates a new Set
+        add()	Adds a new element to the Set
+        delete()	Removes an element from a Set
+        has()	Returns true if a value exists
+        clear()	Removes all elements from a Set
+        forEach()	Invokes a callback for each element
+        values()	Returns an Iterator with all the values in a Set
+        keys()	Same as values()
+        entries()	Returns an Iterator with the [value,value] pairs from a Set

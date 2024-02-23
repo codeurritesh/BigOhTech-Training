@@ -1,0 +1,54 @@
+    Basic JavaScript ES6
+    --------------------
+
+    # Let and Const:
+    - Before ES6 We only declear variable using var only
+    - ES6 Provide 2 more way of Declearing the variable using const and let
+    - Where const provide the feature that if the variable is initialised once can not be modified in futiure
+    - Where let provide us the feature that variable is decleared using let keyword then it will have block Scope
+
+    # Arrow Function:
+    - If we compare Arrow function with the tradition function then we say that Arrow function is the easy and short way to declear the function
+        Example: 
+            -> Tradition Function
+                function add(a,b){
+                    return a+b;
+                }
+            -> Arrow Function
+                const add=(a,b)=>a+b;
+
+    # Easy Syntax for interpolation:
+    - After ES6 it is very easy to interpolation the String insted of using next line.
+                Example: 
+                    Console.log(`Area of Rectangle is: ${area} m^2`);
+
+    # Distracting the Values:
+    - After the ES6 it is very easy to extract value or element from the Array or the objects
+    - we can easily extract the single of multiple value in any order
+        Example:
+            -> const [a,b]=[5,2];
+                - Now in the a or b the value 5,2 is accesses independently
+            -> const {name,age}={ name: "Ritesh verma", Address: "Mathure", age:23}
+                - Now in the name and age we can easily asscessed from the Object.
+    
+    # Provide REST Opeartor:
+    - After ES6 it is very easy to have method with unknown number of arguments by just using the REST Opeartor
+    - It can be used using the three dots ...arguments
+        Example: 
+            -> function addValues(...values){ }
+            -> Here in this function we can give any number of Arguments it just comes under the values variable in the form of Array.
+    
+    # Introduce the Promises:
+    - Here in the ES6 the Promises is defined
+    - Promises make code very easy to understand and manage the Asynchronous code
+    - we can just create the Promises using the Promise class by creating the objects
+        Example: 
+            function fetchData(){
+                return new Promise((reject,resolve)=>{
+                    if(condition){
+                        resolve(data)
+                    }else{
+                        reject(error)
+                    }
+                })
+            }

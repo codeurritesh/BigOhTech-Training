@@ -1,0 +1,29 @@
+ Promise: 
+---------
+- A promise is an object that represents the eventual completion (or failure) of an asynchronous operation. 
+- A promise can be in one of three states: pending, fulfilled, or rejected.
+        * Pending: The promise is still waiting for the asynchronous operation to complete.
+        * Fulfilled: The asynchronous operation completed successfully, and the promise has a value.
+        * Rejected: The asynchronous operation failed, and the promise has an error.
+
+    Example:
+
+                const promise=new Promise((resolve,reject)=>{
+                    let randomNumber=Math.random();
+                    console.log(randomNumber);
+                    if(randomNumber<0.5){
+                        resolve("Inrange");
+                    }
+                    else{
+                        reject("Not in range");
+                    }
+                })
+
+                promise.then((data)=>{
+                    console.log(data);
+                    console.log("Promise Resolve");
+                }).catch((data)=>{
+                    console.log(data);
+                    console.log("Promise Reject");
+                })
+

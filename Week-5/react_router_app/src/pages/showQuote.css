@@ -1,0 +1,23 @@
+.card{
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #bae8e8;
+    -webkit-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 25px -11px rgba(0,0,0,0.75);
+}
+.quotes-container{
+    width: 90vw;
+    height: calc(100vh - 161px);
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    overflow: scroll;
+}

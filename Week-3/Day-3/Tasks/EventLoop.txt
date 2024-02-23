@@ -1,0 +1,15 @@
+    EVENT LOOP
+------------------
+- Event Loop is the something that pulls stuff out of the queue and places it onto the function execution stack whenever the function stack becomes empty.
+
+- Suppore we have a Api call or SetTimeout at that time there stuff get queued into the event queue and wait for execution.
+
+- This event loop is used to provide the async behaviour into the Program.
+
+- This Loops run until the Event Queue got Empty.
+
+- Take every Stuff from the Queue and make it ready for execution.
+
+
+                                While(Queue!Empty) Event Loop
+        Execution Context       <<-----------------------       Event Queue

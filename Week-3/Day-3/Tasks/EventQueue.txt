@@ -1,0 +1,16 @@
+    EVENT QUEUE
+-------------------
+- First we have to analysis that how event loop ios created
+
+- Suppose we have a program contains various variabvle and functions and many Apis call and many        statements having the timeout function.
+
+- So now in this case what happen first code get in the memory Execution phase in which each variable and function get memory in the heap.
+
+- After that program go to the code Execution Phase in which the Api calls and timeout get their seprate place to wait for the responce.
+
+- They all are waiting for the response, and we know that JS is the Single threaded language but if it wait for every response than it makes execution very dependent on others.
+
+- After completing their perticular tasks and getting the response now these stuff will come inside the event queue.
+
+- This is Queue so it will follow the FIFO order of appending and removing now with the help of the event loop it take all stuff one by one for execution.
+

@@ -1,0 +1,11 @@
+ Temporal DeadZone
+-------------------
+- Dead Temporal Zone is the time period where the variable of let and Const is decleared but not initialized.
+
+       Variable Decleared -----------------------------> Variable Initialized
+                                    Time Duration
+
+- This time period between decleared and initialized is called as the Dead Temporal Zone
+- Let and Const variable can not be accessed in the dead Temporal Zone
+- In case of var we know that variable is also initialized with Undefined automatically 
+- But in case of the let and const it is not initialized thats why it is not accessable

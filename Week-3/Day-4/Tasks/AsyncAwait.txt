@@ -1,0 +1,60 @@
+    Async Keyword
+--------------------------
+- Function with async keyword will wrapper into a promise.
+- If this function will return something then promise resolved with return value.
+
+Example: 
+
+            async function add(x, y, z) { 
+                setTimeout(()=>{
+                    return x + y + z;
+                },1000) 
+            }
+            
+            // here data will sttore the value return by the function 
+            add(1, 5, 25).then((data) => {
+                console.log(data +" Inside resolve");
+            }).catch((err) => {
+                console.log(err);
+            })
+
+
+    Await Keyword
+--------------------------
+- Await keyword is only used inside asysnc function
+- await Keyword stop task at that place so that it will wait for response.
+
+Example: 
+
+            async function fun() {
+                console.log("Starting the fun function");//2
+                console.log("Starting to fet the data");//3
+                const fetdata = await fetch('https://catfact.ninja/fact');//it gernally return promise
+                console.log("fetchdata: ");
+                console.log(fetdata);
+                console.log("Staring to parse the fetdata");//6
+                const data = await fetdata.json();
+                console.log("Printing the data");//7
+                console.log(data);//8
+                console.log("function is going to End");//9
+                console.log("Function End");//10
+            }
+
+            console.log("We are going to Call fun() function")//1
+            fun();
+            console.log("AFter fun function");//4
+            console.log("END");//5
+
+//---------------------------OUTPUT OF FUN FUNTION------------------
+/*
+We are going to Call fun() function
+->Starting the fun function
+->Starting to fet the data  --->>> after the fetching starts the
+function go to hold state and after commends of fun is runned
+->After fun function
+->END
+->Starting to parse the fetdata
+->print the data
+->function is going to end
+->function end
+*/

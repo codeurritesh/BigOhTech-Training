@@ -1,0 +1,19 @@
+    Spread Opeartors
+---------------------------------
+- Spread operators are written using three consecutive dots (...)
+- They provide us with an easy way to break up an array or an object into its individual elements.
+
+    Example: 
+            let array = [1, undefined, 3, 4]; 
+            let newArray = [...array, 5];
+
+    Rest operators
+----------------------
+- The rest operator is essentially the opposite of the spread operator 
+- It collects multiple elements into an array 
+- This is useful if you don’t know how many arguments a function may receive, and you want to capture all of them as an array.
+
+    Example: 
+            function add(..numbers){
+
+            }

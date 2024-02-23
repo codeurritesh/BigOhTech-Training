@@ -1,0 +1,44 @@
+    OBJECTS
+---------------
+- As we Know that Variable can store only one single value into it but in JS we can store multiple value in one variable.
+- In JS we can Store Multiple value in the single using the objects
+- Object can we represented as the collection of the key-Value Pairs so that we can store Multiple value int single variable
+
+    Example: 
+    const personObject={
+        firstName: "Ritesh",
+        lastName: "Verma",
+        age: 23
+    }
+
+- Now here we can see that there is the personObject which is having multiple keyvalue pairs like firstName lastName and age.
+- Keys and Values can be of any type like Number,objects,Array,String etc.
+- There can also be the nested Objects for Example: 
+
+        const personObject={
+            firstName: "Ritesh",
+            lastName: "Verma",
+            age: 23,
+            address: {
+                houseNumber: 23,
+                city: Mathura,
+                state: Uttar Pradesh,
+                pinCode: 281004
+            }
+        }
+
+- We can access inside object like: 
+    personObject.firstName      // give Ritesh
+    personObject.age            // give 23
+
+- Looping in Objects: 
+    for(let variable in personObject){
+
+    }
+
+- Adding new Property: 
+    personObject.height= 6
+
+- Deleting Property:
+    delete personObject.height;
+

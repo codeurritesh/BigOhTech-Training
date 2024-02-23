@@ -1,0 +1,20 @@
+    CLOSURE
+---------------
+- A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+- We can say that when a function is bounder together  with the lexical environment then it form an closure.
+
+    Example:
+                function fun(){
+                    let num=100;
+                    function increseNum(){
+                        return num+1;
+                    }
+                    return increseNum;
+                }
+                let closureExample=fun();
+                console.log(closureExample());
+
+                - Now this function increseNum  will return with the variable that is used inside the the method this is called Closure.
+
+- In this above Example we can say that function increseNum will get value of num which is variable of fun method by closure

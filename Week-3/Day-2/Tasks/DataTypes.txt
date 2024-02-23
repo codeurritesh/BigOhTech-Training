@@ -1,0 +1,52 @@
+JavaScript DataTypes
+--------------------
+
+- JavaScript have multiple DataTypes like:
+    - Primitive DataTypes
+        * Number
+        * String
+        * Boolean
+        * NULL
+        * Undefined
+    - Object
+    - Array
+    - Function
+    - BigInt
+    - Symbol
+
+Example of All DataTypes: 
+-------------------------
+
+//String 
+const name="Ritesh Verma"
+
+//Boolean
+const isTrue=true
+
+//Number
+const houseNumber=234
+
+//Undefined
+const marks=undefined;
+
+//Object
+const newObject={
+    name:"Ritesh verma",
+    age: 23,
+    address: "Krishna Nagar Mathura",
+    haveMac: true
+}
+
+//Array
+const Array=[1,2,3,4,5];
+
+//Function
+function add(a,b){
+    return a+b;
+}
+
+//BigInt
+const BigInt=BigInt(1234563747347774837);
+
+//Symbol
+const Symbol=Symbol("symbol");

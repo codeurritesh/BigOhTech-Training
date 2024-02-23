@@ -1,0 +1,50 @@
+
+.navbar{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#searchbar{
+width: 30vw;
+height: 40px;
+font-size: large;
+padding: 5px;
+box-sizing: border-box;
+}
+#search-button{
+    height: 40px;
+    background-color: grey;
+    border-radius: 5px ;
+    color: white;
+    cursor: pointer;
+    border: 0px;
+}
+.header-component{
+    display: flex;
+    align-items: center;
+}
+#like-button{
+    height: 40px;
+    border-radius: 5px ;
+    color: grey;
+    cursor: pointer;
+    font-size: 30px;   
+    border: 0px;
+
+}
+#countLikes{
+    color: rgb(114, 114, 114);
+}
+#like-button:hover{
+    color: black;
+
+}
+#search-button:hover{
+background-color: black;
+color: white;
+}

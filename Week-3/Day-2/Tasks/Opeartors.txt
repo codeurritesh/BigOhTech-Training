@@ -1,0 +1,47 @@
+    Opeartors
+-----------------
+- JavaScript have different types of Opeartors like:-
+    * Arithmetic Opeartors
+    * Assignment Opeartors
+    * Comparision Opeartors
+    * Logical Opeartors
+    * Unary Opeartors
+    * Ternary Opeartors
+
+# Arithmetic Opeartors:
+    - Addition (+)
+    - Subtraction (-)
+    - Multipication(*)
+    - Division (/)
+    - Modulus (%)
+    - Increment (++)
+    - Decrement (--)
+
+# Assignment Opeartors:
+    - Assignment (=)
+    - Addition and Assignment (+=)
+    - Subtraction and Assignment (-=)
+    - Division and Assignment (/=)
+    - Multipication and Assignment (*=)
+
+# Comparision Opeartors:
+    - Equality (==)
+    - Strictly Equality (===)
+    - InEquality (!=)
+    - Strictly inEquality (!==)
+    - Greater then (>)
+    - Less then (<)
+    - Greater then Equalto (>=)
+    - Less then Equalto (<=)
+
+# Logical Opeartors:
+    - Logical AND (&&)
+    - Logical OR (||)
+    - Logical NOT (!)
+
+# Unary Opeartors:
+    - Unary Plus (+)
+    - Unary Minus (-)
+
+# Ternary Opeartors:
+    - condition ? Expression1 : Expression2

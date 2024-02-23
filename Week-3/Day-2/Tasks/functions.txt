@@ -1,0 +1,27 @@
+Regular Function vs Arrow Function
+----------------------------------
+There are the two different types of declearing the Function but the working is the same.
+
+# Regular Function
+    - We can defined the Regular function by using the function keyword
+    - Have Accessed to the arguments object.
+    - Here this refer to the calling context
+    - Hoisting done
+        Example:
+            function add(a,b){
+                console.log(a+b);// just return the a+b
+                console.log(this)// this refer to the calling context
+                console.log(arguments)// Accessed easily
+            }
+
+# Arrow Function
+    - We can defined the Arrow function by using the '()=>' type
+    - Not have Accessed to the arguments object.
+    - Here this is inherited to surrounding Scope
+    - Hoisting not done
+        Example:
+            const add=(a,b)=>{
+                console.log(a+b);// just return the a+b
+                console.log(this)// this refer to the surrounding Scope
+                console.log(arguments)// Not Accessed easily
+            }

@@ -1,0 +1,25 @@
+     Hoisting
+--------------------
+- In JavaScript Hoisting is the property where all the Variable decleration is come on top and this process is called Hoisting.
+- We can access Methods and Variable before it is initialized.
+- When the var Variable is Hoisted in the js program then memory Allocation is done for var Variable and initialized as Undefined
+- When the normal function is Hoisted then it is Hoisted with their full function body
+- So incase of normal function, we can use method before it is declered in program in working state
+    Example: 
+        console.log(data);// Print Undefined
+        const data=10;
+
+        console.log(add(10,20));// Print 30 as Answer
+        function add(a,b){
+            return a+b;
+        }
+
+- If we Talk about let and const variable decleration then they both are also Hoisted but difference is that it initialized by nothing 
+  thats why we found an error while accessing the let const variable before decleration;
+    Example: 
+    console.log(data);// Shows error
+    let data=5;
+
+    console.log(data);// Shows error
+    let data="Ritesh";
+

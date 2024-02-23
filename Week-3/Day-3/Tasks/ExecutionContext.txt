@@ -1,0 +1,28 @@
+    EXECUTION CONTEXT
+-------------------------
+
+                        _____________________________________________________
+                        |              Execution Context                    |
+                        |---------------------------------------------------|
+                        |   Memory Allocation Phase | Code Execution Phase  |
+                        |                           |                       |
+                        -----------------------------------------------------
+
+- Execution Context is the Internal Concept that describe the Internal Working of the Code.
+- It describe that how any varible is created and worked Internally inside the JavaScript.
+- There are two Phases inside the Execution Context
+    * Memory Allocation Phase
+    * Code Execution Phase
+- These two phase is totally innvolved from the start to the end of the variable or functions etc.
+
+* Memory Allocation Phase:
+            - In Memory Allocation Phase, Let take an pointer which is moving from top to bottom of the lines in the program.
+            - If that Pointer find any type of variable Decleration then that variable get space in the Memory only and Initialize it with undefined.
+            - If that Pointer find any type of functions Decleration then that functions get space in the Memory with its body.
+            - if that Pointer find any type of method calling or other things then those things get skipped at that time.
+
+* Code Execution Phase: 
+            - In Code Execution Phase, Our Code is get executed line by line
+            - Here each variable get Initialize and method Calling is also done, for that perticular function, again the Execution Context is created.
+            - Again the Execution Context is created inside the Execution phase and same thing is done for body of this function.
+

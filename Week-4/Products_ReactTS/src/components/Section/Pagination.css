@@ -1,0 +1,59 @@
+.paging-section{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pagination{
+    display: flex;
+}
+.active-page{
+    background-color: #455d7a;
+    color: white;
+}
+#offset{
+    width: 40px;
+    font-weight: bold;
+}
+.paginate-buttons{
+    width: 94px;
+    height: 25px;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.paginate-buttons::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+.paginate-buttons button{
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 50%;
+    border: 0px;
+}
+.paginate-buttons button:hover{
+    background-color: #455d7a;
+    color: white;
+}
+.paging-section input{
+    margin-left: 5px;
+}
+.shift-buttons{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0px;
+    background-color: #233142;
+    color: white;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
