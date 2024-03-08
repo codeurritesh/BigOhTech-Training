@@ -1,0 +1,47 @@
+.form-login-box{
+    width: 800px;
+    padding: 50px;
+    margin: 20px auto 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #e3e3e3;
+    -webkit-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+    box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+    transition: 1s;
+
+}
+.form-details{
+    width: 100%;
+
+}
+.form-element{
+    width: 100%;
+    font-size: large;
+    border-radius: 10px;
+    border: 0px;
+}
+.form-buttons{
+    width:92%;
+    height: 40px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    border: 0px;
+}
+.reset{
+    background-color: #f95959;
+}
+.submit{
+    color: white;
+    background-color: #455d7a;
+}
+.select{
+    height: 50px;
+}
+.textarea{
+    width: 89%;
+    height: 50px;
+}

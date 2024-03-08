@@ -1,0 +1,136 @@
+.product-details{
+    width: 90vw;
+    height: 700px;
+    margin: 20px auto 20px auto;
+    background-color: #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+
+}
+
+.product-images{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.main-image{
+    width: 100%;
+    height: width;
+    max-height: 500px;
+    min-height: 500px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+}
+.image-choice{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.small-img{
+    width: 20%;
+    height: width;
+    max-height: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+    object-fit: contain;
+    background-color: white;
+}
+.small-img:hover{
+    border: 1px solid black;
+    opacity: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+.product-info{
+    background-color: #e3e3e3;
+    width: 50%;
+    height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.buy-button{
+    width: 100px;
+    height: 50px;
+    border-radius:10px ;
+    font-size: large;
+    background-color: #455d7a;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+    
+}
+
+.buttons{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+}
+.button{
+    margin-left: 20px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+box-shadow: 11px 11px 17px -10px rgba(0,0,0,0.75);
+}
+.button:hover{
+    opacity: 80%;
+}
+.discount{
+    color: red;
+    font-size: x-large;
+}
+.like-button{
+    height: 100%;
+    background-color: #455d7a;
+    font-size: xx-large;
+}
+.mrp-price{
+    text-decoration: line-through;
+}
+.rating-star{
+    color: rgb(255, 200, 0);
+    font-size: larger;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.title i{
+    color: grey;
+    cursor: pointer;
+}
+.title i:hover{
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-details{
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .product-images{
+        width: 95%;
+        margin: auto;
+    border-bottom:5px solid grey ;
+
+    }
+    .product-info{
+        width: 100%;
+    }
+  }

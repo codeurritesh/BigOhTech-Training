@@ -1,0 +1,14 @@
+#image-container{
+    width: 80vw;
+    height: calc(100vh - 240px);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #455d7a;
+    transition: 0.5s;
+    overflow: scroll;
+}
