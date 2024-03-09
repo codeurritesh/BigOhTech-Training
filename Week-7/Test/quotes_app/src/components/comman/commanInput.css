@@ -1,0 +1,9 @@
+.form-control{
+    min-width: 200px;
+    margin: 10px;
+}
+
+.form-error{
+    margin-left: 20px;
+    color: red;
+}
