@@ -20,7 +20,6 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ["All-Quotes", "Add-Quote"];
 
 export default function Header(props: Props) {
   const { window } = props;
@@ -39,13 +38,26 @@ export default function Header(props: Props) {
       </Link>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        <Link to="/">
+          <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary="Home" />
             </ListItemButton>
           </ListItem>
-        ))}
+          </Link>
+          <Link to="/all-quotes">
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText primary="All-Quotes" />
+            </ListItemButton>
+          </ListItem>
+          </Link>        <Link to="/add-quote">
+          <ListItem disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }}>
+              <ListItemText primary="Add-new-quote" />
+            </ListItemButton>
+          </ListItem>
+          </Link>
       </List>
     </Box>
   );
