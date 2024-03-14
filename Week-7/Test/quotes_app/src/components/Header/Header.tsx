@@ -14,6 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import { SxProps } from "@mui/material";
 
 interface Props {
   window?: () => Window;
@@ -29,6 +30,8 @@ export default function Header(props: Props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+
+  // useMemo here
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Link to="/">
@@ -41,7 +44,7 @@ export default function Header(props: Props) {
         <Link to="/">
           <ListItem disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Home" sx={{textDecoration:"none"}} />
             </ListItemButton>
           </ListItem>
           </Link>
@@ -62,12 +65,14 @@ export default function Header(props: Props) {
     </Box>
   );
 
+  // custome hook, dom mange
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
+      {/* jo bhi likhoge uska mtlb pta hona chahiye... ?? uska mtlb smjh me nhi ataa what is this ????? */}
       <AppBar component="nav" color="primary">
         <Toolbar>
           <IconButton
@@ -90,7 +95,9 @@ export default function Header(props: Props) {
               <Button sx={{ color: "#fff" }}>Home</Button>
             </Link>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Link to="/all-quotes">
+            {/* do not style inline */}
+            <Link to="/all-quotes"> 
+            {/* where is constant ? */}
               <Button sx={{ color: "#fff" }}>All-Quotes</Button>
             </Link>
             <Link to="/add-new-quote">
@@ -119,8 +126,18 @@ export default function Header(props: Props) {
         >
           {drawer}
         </Drawer>
+
+        {/* make custom drawer here, do not use directly any feature of MUI*/}
       </nav>
       <Toolbar />
     </Box>
   );
 }
+
+// const sxProps= {
+//   container: {
+//     margin: 10
+//   }
+// } satisfies Record<string,SxProps> ;
+
+// sxProps.container

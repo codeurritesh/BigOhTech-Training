@@ -2,6 +2,24 @@
     width: 100vw;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+.choose-theme-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.theme-choice{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* naming conventions */
+
+.theme-cta{ 
+
+    /* CTA */
+
 }

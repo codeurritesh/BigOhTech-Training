@@ -1,15 +1,17 @@
 import { useTheme } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./style.css"
 import QuoteCard from '../../components/Card/Card'
 import { Quote } from '../../dataTypes/Quote'
 import { localStorageManagement } from '../../services/LocalStorageManagement'
+import { ThemeContext } from '../../ThemeContext/themeContext'
 const AllQuotes = () => {
     const theme=useTheme()
+    const themeContext=useContext(ThemeContext);
     const initialQuote=localStorageManagement.getItem("Quotes");
     const [allQuotes,setAllQuotes]=useState<Quote[] | null>(initialQuote);
 
-  return (<div className='main-container' style={{backgroundColor:theme.palette.secondary.main}}>
+  return (<div className='main-container' style={{backgroundColor:themeContext?.themeColor}}>
   <h1>All-Quotes</h1>
     <div className='quotes-container' >
     {

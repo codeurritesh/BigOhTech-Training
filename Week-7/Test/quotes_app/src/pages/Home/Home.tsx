@@ -6,7 +6,7 @@ const Home = () => {
   const theme=useTheme();
   return (
     <Box className='banner' sx={{backgroundColor:theme.palette.secondary.main}}>
-        <img src={banner} alt="" />
+        <img src={banner} alt="" className='banner-img'/>
     </Box>
   )
 }

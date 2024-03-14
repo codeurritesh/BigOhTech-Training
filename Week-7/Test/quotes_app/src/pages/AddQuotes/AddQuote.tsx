@@ -1,16 +1,18 @@
 import { Button, Container, TextField, useTheme } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import "./style.css";
 import { Quote } from "../../dataTypes/Quote";
 import Input from "../../components/comman/CommanInput";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { localStorageManagement } from "../../services/LocalStorageManagement";
+import { ThemeContext } from "../../ThemeContext/themeContext";
 
 const AddQuote = () => {
   const theme = useTheme();
   const navigate = useNavigate();
-  const { control, handleSubmit, formState, register } = useForm<Quote>();
+  const themeContext=useContext(ThemeContext);
+  const { control, handleSubmit, formState, register, } = useForm<Quote>();
   const { errors } = formState;
 
   const submitHandler = (data: any) => {
@@ -23,7 +25,7 @@ const formattedDate = currentDate.toLocaleDateString();
   return (
     <div
       className="form-container"
-      style={{ backgroundColor: theme.palette.secondary.main }}
+      style={{ backgroundColor: themeContext?.themeColor }}
     >
       <form onSubmit={handleSubmit(submitHandler)}>
         <h1>Add New Quote</h1>

@@ -15,7 +15,7 @@ class LocalStorageManagement<T extends Quote> {
       console.log("Data Set Successfully");
     }
   }
-
+// glt hai...
   getItem(key: string): T[] | null {
     if (typeof window !== "undefined" && window.localStorage) {
       const oldStoredData: string | null = localStorage.getItem(key);
@@ -29,6 +29,9 @@ class LocalStorageManagement<T extends Quote> {
     return null;
   }
 
+
+  /// 
+// key name ka enum, type axe se use kro
   doesValueExist(key: string, value: T): boolean {
     const oldStoredData = this.getItem(key);
 
@@ -59,6 +62,15 @@ class LocalStorageManagement<T extends Quote> {
     return null;
   }
   
+  // do not avoid types, worng way....
+  setValue(key:string,value:string){
+    localStorage.setItem(key,value);
+    console.log("Theme Set Successfully")
+  }
+  getValue(key:string){
+    const themeColor=localStorage.getItem(key);
+    return themeColor;
+  }
   
 }
 export const localStorageManagement=new LocalStorageManagement();

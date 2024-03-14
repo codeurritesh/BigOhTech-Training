@@ -1,7 +1,11 @@
 .banner{
     width: 100vw;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 140px);
     display: flex;
     justify-content: center;
 
+}
+.banner-img{
+    width: 50vw;
+    min-width: 500px;
 }
