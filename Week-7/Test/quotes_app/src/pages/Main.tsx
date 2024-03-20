@@ -8,31 +8,38 @@ import { ThemeProvider } from "@emotion/react";
 import { localStorageManagement } from "../services/LocalStorageManagement";
 import { themeColors } from "../utils/themeColors";
 
-const Main = () => {
-  const [darkMode, setDarkMode] = useState(localStorageManagement.getValue('isDarkMode')=='dark'? true : false);
-  const [themeColor,setInitialThemeColor]=useState(localStorageManagement.getValue('initialThemeColor') ?? themeColors.blue);
-  const theme = createMuiTheme({
+const useTheme = (darkMode = false) => {
+  return {
     palette: {
       type: darkMode ? "dark" : "light",
       primary: {
-        main: darkMode?'#222831':'#38598b',
+        main: darkMode ? "#222831" : "#38598b",
       },
       secondary: {
-        main: darkMode?'#31363F':'#ffffff',
+        main: darkMode ? "#31363F" : "#ffffff",
       },
-      // themeColor:{
-      //   main:initialThemeColor
-
-      // }
     },
-  } as ThemeOptions);
+  } as ThemeOptions;
+};
+
+const Main = () => {
+  const [darkMode, setDarkMode] = useState(
+    localStorageManagement.getValue("isDarkMode") == "dark" ? true : false
+  );
+  const [themeColor, setInitialThemeColor] = useState(
+    localStorageManagement.getValue("initialThemeColor") ?? themeColors.blue
+  );
+  const theme = createMuiTheme(useTheme(darkMode) );
+
   return (
     <ThemeProvider theme={theme}>
-    <ThemeContext.Provider value={{ darkMode, setDarkMode, themeColor, setInitialThemeColor}}>
-        <Header/>
-        <Outlet/>
-        <Footer/>
-    </ThemeContext.Provider>
+      <ThemeContext.Provider
+        value={{ darkMode, setDarkMode, themeColor, setInitialThemeColor }}
+      >
+        <Header />
+        <Outlet />
+        <Footer />
+      </ThemeContext.Provider>
     </ThemeProvider>
   );
 };

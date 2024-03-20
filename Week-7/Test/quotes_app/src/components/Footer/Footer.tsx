@@ -19,11 +19,13 @@ const Footer = () => {
     themeContext?.setInitialThemeColor(color);
     // make custom hook using callback 
   }
+
+
   return (
-    <footer
-      className="main-footer"
-      style={{
-        backgroundColor: theme.palette.primary.main,
+    <Box
+    component='footer'
+      sx={{
+        backgroundColor: 'primary.main',
         padding: "20px",
         textAlign: "center",
         position: "fixed",
@@ -32,9 +34,12 @@ const Footer = () => {
         width: "100%",
       }} 
 
-      // make style common
     >
-      <Typography variant="body2" color="white">
+      <Typography 
+      sx={{
+
+      }}
+      variant="body2" color="white">
         All rights reserved. Quotes-app © 2024.
       </Typography>
       <Button
@@ -57,7 +62,7 @@ const Footer = () => {
           ))
         }
       </div>
-    </footer>
+    </Box>
   );
 };
 
